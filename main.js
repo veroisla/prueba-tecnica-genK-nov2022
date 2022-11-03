@@ -1,5 +1,8 @@
 'use strict';
 
-const button = document.querySelector('.js__button');
+const button = document.createElement('button');
+button.innerHTML = '1 botón';
 
-button.innerHTML += '<button type="button">1 botón</button>';
+console.log(button);
+
+document.body.appendChild(button);
