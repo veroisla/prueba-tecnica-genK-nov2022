@@ -5,10 +5,7 @@ for (let i = 1; i < 1001; i++) {
   button.innerHTML += `${i} Botón`;
 
   button.addEventListener('mouseover', () => {
-    button.innerHTML = `${i} BotóN`;
-  });
-  button.addEventListener('mouseout', () => {
-    button.innerHTML = `${i} Botón`;
+    button.innerHTML.replace('n', 'N');
   });
 
   document.body.appendChild(button);
