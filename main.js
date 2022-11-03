@@ -1,11 +1,19 @@
 'use strict';
 
-const button = document.querySelector('.js__button');
+const button = document.createElement('button');
+button.innerHTML = '1 botón';
 
-button.innerHTML += '<button type="button" class="js__btn">1 botón</button>';
+console.log(button);
 
-function changeTextHover() {
-  button.innerHTML = '<button type="button">1 botóN</button>';
+document.body.appendChild(button);
+
+function mouseOver() {
+  button.innerHTML = '1 botóN';
 }
 
-button.addEventListener('mouseover', changeTextHover);
+function mouseOut() {
+  button.innerHTML = '1 botón';
+}
+
+button.addEventListener('mouseover', mouseOver);
+button.addEventListener('mouseout', mouseOut);
