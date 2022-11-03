@@ -1,5 +1,4 @@
 'use strict';
-
 const array1 = [
   [1, 3, 5],
   [7, 9, 7],
@@ -25,10 +24,7 @@ for (let rows = 0; rows < 3; rows++) {
 
 let resultToString = result.map((item) => {
   return item.map((value) => {
-    return value.toString().padStart(3, 0);
+    return value.toString();
   });
 });
-
-result.push(resultToString);
-
-console.log(result);
+console.log(resultToString);
