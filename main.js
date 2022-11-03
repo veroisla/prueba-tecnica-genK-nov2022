@@ -24,7 +24,8 @@ for (let rows = 0; rows < 3; rows++) {
 
 let resultToString = result.map((item) => {
   return item.map((value) => {
-    return value.toString();
+    return value.toString().padStart(3, 0);
   });
 });
-console.log(resultToString);
+result.push(resultToString);
+console.log(result);
