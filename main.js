@@ -23,4 +23,12 @@ for (let rows = 0; rows < 3; rows++) {
   result.push(newArray);
 }
 
+let resultToString = result.map((item) => {
+  return item.map((value) => {
+    return value.toString();
+  });
+});
+
+result.push(resultToString);
+
 console.log(result);
